@@ -1,4 +1,4 @@
-from bottle import route, run, error
+from bottle import route, run, error, template
 from pages import *
 import os
 

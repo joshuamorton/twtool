@@ -6,13 +6,13 @@ import os
 def index():
 	return htmlHead+"hello world"+htmlEnd
 
-@route('/gargareth/')
+@route('/gargareth')
 def gargPage():
 	return "Hello garg, how are you doing? add something to the url like /gargareth/soemthing"
 
 @route('/gargareth/<gargThing>')
 def gargPageTool(gargThing):
-	return "for a nuclear fusion generator, you need a {{gargthing}}"
+	return "for a nuclear fusion generator, you need a {gargthing}"
 
 #this is a change
 

@@ -5,4 +5,4 @@ from pages import *
 def index():
 	return htmlStart+"Hello"+htmlEnd
 	
-	run(host='http://twtool.herokuapp.com/', port=80)
+run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))

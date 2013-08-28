@@ -10,6 +10,7 @@ def index():
 def gargPage():
 	return "Hello garg, how are you doing? add something to the url like /gargareth/something"
 
+@route('/gargareth/')
 @route('/gargareth/<gargThing>')
 def gargPageTool(gargThing = 'something'):
 	return template("For a nuclear fusion generator, you need a {{gargThing}}", gargThing = gargThing) 

@@ -12,7 +12,7 @@ def gargPage():
 
 @route('/gargareth/<gargThing>')
 def gargPageTool(gargThing):
-	return "for a nuclear fusion generator, you need a {gargthing}"
+	return str("for a nuclear fusion generator, you need a {gargThing}" , gargThing = gargThing) 
 
 #this is a change
 

@@ -11,8 +11,8 @@ def gargPage():
 	return "Hello garg, how are you doing? add something to the url like /gargareth/something"
 
 @route('/gargareth/<gargThing>')
-def gargPageTool(gargThing):
-	return str("for a nuclear fusion generator, you need a {{gargThing}}" , gargThing = gargThing) 
+def gargPageTool(gargThing = 'something'):
+	return template("For a nuclear fusion generator, you need a {{gargThing}}", gargThing = gargThing) 
 
 #this is a change
 
